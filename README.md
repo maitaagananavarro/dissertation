@@ -14,21 +14,22 @@ The setup for running benchmark experiments is available on [ClimateSet’s GitH
 
 ### 2. Reproduce the Experiments in This Work
 
-1. **Download and Run the Template Files**:
-   - **Method #1**: `setup_timeshift.py`
-   - **Method #2**: `setup_ssp.py`
-   - **Method #3**: `setup_lowconfidence.py`
+1. **Download and Run the Template Files:**
+Running the files will create the templates corresponding to each method.
+   - **Method #1 - Splitting Based on Time Period**: `setup_timeshift.py`
+   - **Method #2 - Changing SSP Scenario**: `setup_ssp.py`
+   - **Method #3 - Confidence-Interval Based**: `setup_confidence.py`
 
-2. **For Method #3**:
+3. **For Method #3**:
    - Add the additional `methods_confidence.py` file to ClimateSet's `emulator` folder, which contains all necessary methods for post-testing based on confidence thresholds.
    - Import `methods_confidence.py` into ClimateSet’s existing `emulator/train.py` file and integrate the methods as described in the repository.
 
-3. **Run the Template Files**:
+4. **Run the Template Files**:
    - Execute the template files as usual, following ClimateSet’s instructions.
 
 ### 3. Examples to Try
 
-- **Method #1**: Run a U-Net model on an MPI-ESM1-2-HR dataset.
+- **Method #1**: Run a U-Net model on an MPI-ESM1-2-HR dataset, with different train and test time periods.
   ```bash
   python emulator/run.py experiment=single_emulator/unet/MPI-ESM1-2-HR/unet_experiment_timeshift.yaml
   
@@ -36,7 +37,7 @@ The setup for running benchmark experiments is available on [ClimateSet’s GitH
   ```bash
   python emulator/run.py experiment=single_emulator/convlstm/AWI-CM-1-1-MR/convlstm_experiment_ssp370.yaml
 
-- **Method #3**: Run a ClimaX model on an FGOALS-f3-L dataset.
+- **Method #3**: Run a ClimaX model on an FGOALS-f3-L dataset, and retrieve metrics for low confidence and confident points.
   ```bash
   python emulator/run.py experiment=single_emulator/climax/FGOALS-f3-L/climax_experiment_confidence.yaml
 
