@@ -7,6 +7,8 @@ The purpose of these instructions is to guide users through the setup and reprod
 2. **Reproduce Experiments**: Implement and execute specific methods for testing model robustness under various conditions, including different time periods, SSP scenarios, and confidence intervals.
 3. **Validate Models**: Utilize the provided template files and methods to verify the performance of different climate models, ensuring they are robust to changing climate dynamics.
 
+While this study focuses on ClimateSet’s setup and experiments, users interested in adapting the framework to evaluate other climate models are encouraged to do so. Although detailed instructions for this adaptation are not provided here, the framework is designed to be flexible and can be modified to accommodate different models and datasets.
+
 ## Source Code
 
 The setup for running benchmark experiments is available on [ClimateSet’s GitHub repository](https://github.com/RolnickLab/ClimateSet/). Instructions and code for additional out-of-distribution experiments created in this work can also be found in this repository.
