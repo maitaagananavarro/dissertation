@@ -1,5 +1,12 @@
 # "Do Current Climate Models Work in Changing Climate Dynamics?" - Experiment Setup and Reproduction
 
+## Purpose
+
+The purpose of these instructions is to guide users through the setup and reproduction of benchmark experiments for evaluating climate models in the context of changing climate dynamics, explored in the study "Do Current Climate Models Work in Changing Climate Dynamics?". Users will:
+1. **Set Up Benchmark Experiments**: Configure and run benchmark experiments using ClimateSet’s core dataset and emulation tools.
+2. **Reproduce Experiments**: Implement and execute specific methods for testing model robustness under various conditions, including different time periods, SSP scenarios, and confidence intervals.
+3. **Validate Models**: Utilize the provided template files and methods to verify the performance of different climate models, ensuring they are robust to changing climate dynamics.
+
 ## Source Code
 
 The setup for running benchmark experiments is available on [ClimateSet’s GitHub repository](https://github.com/RolnickLab/ClimateSet/). Instructions and code for additional out-of-distribution experiments created in this work can also be found in this repository.
@@ -22,7 +29,7 @@ Running the files will create the templates corresponding to each method.
 
 3. **For Method #3**:
    - Add the additional `methods_confidence.py` file to ClimateSet's `emulator` folder, which contains all necessary methods for post-testing based on confidence thresholds.
-   - Import `methods_confidence.py` into ClimateSet’s existing `emulator/train.py` file and integrate the methods as described in the repository.
+   - Import `methods_confidence.py` into ClimateSet’s existing `emulator/train.py` file and integrate the methods as described in the repository. See `train.py` in this repository as an example of how to integrate the methods. 
 
 4. **Run the Template Files**:
    - Execute the template files as usual, following ClimateSet’s instructions.
