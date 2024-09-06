@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The purpose of these instructions is to guide users through the setup and reproduction of benchmark experiments for evaluating climate models in the context of changing climate dynamics, explored in the study "Do Current Climate Models Work in Changing Climate Dynamics?". Users can:
+The purpose of these instructions is to guide users through the setup and reproduction of benchmark experiments for evaluating climate models in the context of changing climate dynamics, explored in the AI for Sustainable Development MSc dissertation "Do Current Climate Models Work in Changing Climate Dynamics?". Users can:
 1. **Set Up Benchmark Experiments**: Configure and run benchmark experiments using ClimateSet’s core dataset and emulation tools.
 2. **Reproduce Experiments**: Implement and execute specific methods for testing model robustness under various conditions, including different time periods, SSP scenarios, and confidence intervals.
 3. **Validate Models**: Utilize the provided template files and methods to verify the performance of different climate models, ensuring they are robust to changing climate dynamics.
